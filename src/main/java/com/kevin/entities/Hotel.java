@@ -37,6 +37,12 @@ public class Hotel {
 		this.address = address;
 		this.reviews = reviews;
 	}
+	
+   @Override
+   public String toString() {
+       return String.format("Hotel{HotelId='%s', name='%s', pricePerNight=%d, address=%s ,reviews=%s}\n",
+               id, name, pricePerNight, address, reviews);
+   }
 
 
 
